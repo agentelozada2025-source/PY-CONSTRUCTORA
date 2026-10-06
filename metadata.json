@@ -1,0 +1,8 @@
+{
+  "name": " Gestión de Contratos y Cobranzas",
+  "description": "Sistema integral para contratistas de obras y servicios: control financiero, comprobantes de pago (Yape/transferencias), saldos automáticos, facturas y contratos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

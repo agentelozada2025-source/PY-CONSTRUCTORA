@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --urban-asphalt: #090C13;
+    --urban-surface: #111522;
+    --urban-surface-elevated: #171C2C;
+    --urban-surface-active: #1D2436;
+    --urban-border: #232B3D;
+    --urban-border-subtle: #1A2131;
+    --urban-amber: #F59E0B;
+    --urban-amber-glow: rgba(245, 158, 11, 0.25);
+    --urban-mint: #10B981;
+    --urban-orange: #F97316;
+    --urban-red: #EF4444;
+    --urban-blue: #38BDF8;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #090C13;
+    color: #F8FAFC;
+    letter-spacing: -0.011em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background-color: #F59E0B;
+    color: #05060A;
+  }
+}
+
+/* Custom scrollbars for high-end urban dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D111A;
+}
+::-webkit-scrollbar-thumb {
+  background: #252D40;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Urban Architectural Subtle Blueprint Grid */
+.urban-grid-bg {
+  background-image: 
+    radial-gradient(rgba(245, 158, 11, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px, 12px 12px;
+}
+
+/* Urban Caution Hazard Striping */
+.urban-hazard-strip {
+  background: repeating-linear-gradient(
+    -45deg,
+    #F59E0B 0px,
+    #F59E0B 10px,
+    #090C13 10px,
+    #090C13 20px
+  );
+}
+
+.urban-hazard-strip-subtle {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(245, 158, 11, 0.35) 0px,
+    rgba(245, 158, 11, 0.35) 6px,
+    rgba(17, 21, 34, 0.95) 6px,
+    rgba(17, 21, 34, 0.95) 12px
+  );
+}
+
+/* Urban Glows and Edge Highlights */
+.urban-glow-amber {
+  box-shadow: 0 0 16px -2px rgba(245, 158, 11, 0.3);
+}
+
+.urban-border-glow:hover {
+  border-color: #F59E0B !important;
+  box-shadow: 0 0 12px -2px rgba(245, 158, 11, 0.25);
+}
+
+/* ========================================================
+   THEME: ASFALTO URBANO (DARK INDUSTRIAL - DEFAULT)
+   ======================================================== */
+body.theme-dark,
+html.theme-dark {
+  background-color: #090C13;
+  color: #F8FAFC;
+}
+
+body.theme-dark .bg-white {
+  background-color: #111522 !important;
+}
+
+body.theme-dark .bg-slate-50,
+body.theme-dark .bg-slate-100 {
+  background-color: #171C2C !important;
+}
+
+body.theme-dark .bg-slate-200 {
+  background-color: #1F273D !important;
+}
+
+body.theme-dark .border-slate-200,
+body.theme-dark .border-slate-100,
+body.theme-dark .border-slate-300 {
+  border-color: #232B3D !important;
+}
+
+body.theme-dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+body.theme-dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1E2536 !important;
+}
+
+body.theme-dark .text-slate-900,
+body.theme-dark .text-slate-800 {
+  color: #F8FAFC !important;
+}
+
+body.theme-dark .text-slate-700,
+body.theme-dark .text-slate-600 {
+  color: #CBD5E1 !important;
+}
+
+body.theme-dark .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+body.theme-dark .text-slate-400 {
+  color: #64748B !important;
+}
+
+body.theme-dark .hover\:bg-slate-50:hover,
+body.theme-dark .hover\:bg-slate-100:hover {
+  background-color: #1B2133 !important;
+}
+
+body.theme-dark input,
+body.theme-dark select,
+body.theme-dark textarea {
+  background-color: #141926 !important;
+  border-color: #263045 !important;
+  color: #F8FAFC !important;
+}
+
+body.theme-dark input:focus,
+body.theme-dark select:focus,
+body.theme-dark textarea:focus {
+  border-color: #F59E0B !important;
+  outline: none;
+  box-shadow: 0 0 0 1px #F59E0B;
+}
+
+/* ========================================================
+   THEME: CONCRETO URBANO (LIGHT ARCHITECTURAL)
+   ======================================================== */
+body.theme-light,
+html.theme-light {
+  background-color: #EBF0F5;
+  color: #0F172A;
+}
+
+body.theme-light .urban-grid-bg {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+body.theme-light .bg-white {
+  background-color: #FFFFFF !important;
+}
+
+body.theme-light .border-slate-200 {
+  border-color: #CBD5E1 !important;
+}
+
+/* Mobile & Touch Ergonomics */
+.safe-area-pb {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 0.5rem);
+}
+
+.safe-area-pt {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+@media (max-width: 768px) {
+  /* Prevent horizontal stretch on mobile */
+  html, body {
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+

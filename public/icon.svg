@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#090C13"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#222B3D" stroke-width="4"/>
+  
+  <!-- Subtle Urban Blueprint Grid -->
+  <path d="M64 128h384M64 256h384M64 384h384M128 64v384M256 64v384M384 64v384" stroke="#161D2B" stroke-width="2" stroke-dasharray="4 6"/>
+  
+  <!-- Caution Hazard Diagonal Badge at Top Right -->
+  <g opacity="0.85">
+    <path d="M380 50 L460 130" stroke="#F59E0B" stroke-width="12" stroke-linecap="round"/>
+    <path d="M410 50 L470 110" stroke="#090C13" stroke-width="6"/>
+  </g>
+
+  <!-- Construction Building / Crane / Architecture Symbol -->
+  <g transform="translate(96, 96)">
+    <!-- Main Tower -->
+    <rect x="40" y="80" width="120" height="220" rx="16" fill="#151A29" stroke="#F59E0B" stroke-width="8"/>
+    
+    <!-- Building Windows / Grid -->
+    <rect x="65" y="110" width="28" height="24" rx="4" fill="#F59E0B" opacity="0.9"/>
+    <rect x="107" y="110" width="28" height="24" rx="4" fill="#F59E0B" opacity="0.9"/>
+    <rect x="65" y="155" width="28" height="24" rx="4" fill="#F59E0B" opacity="0.7"/>
+    <rect x="107" y="155" width="28" height="24" rx="4" fill="#F59E0B" opacity="0.7"/>
+    <rect x="65" y="200" width="28" height="24" rx="4" fill="#F59E0B" opacity="0.5"/>
+    <rect x="107" y="200" width="28" height="24" rx="4" fill="#F59E0B" opacity="0.5"/>
+    <rect x="65" y="245" width="70" height="30" rx="6" fill="#F59E0B"/>
+    
+    <!-- Secondary High-rise Tower -->
+    <rect x="180" y="140" width="100" height="160" rx="16" fill="#101422" stroke="#38BDF8" stroke-width="8"/>
+    <rect x="202" y="170" width="22" height="22" rx="4" fill="#38BDF8" opacity="0.8"/>
+    <rect x="236" y="170" width="22" height="22" rx="4" fill="#38BDF8" opacity="0.8"/>
+    <rect x="202" y="210" width="22" height="22" rx="4" fill="#38BDF8" opacity="0.6"/>
+    <rect x="236" y="210" width="22" height="22" rx="4" fill="#38BDF8" opacity="0.6"/>
+
+    <!-- Crane Boom Jib Beam -->
+    <path d="M100 80 L100 20 L280 20 L240 55" fill="none" stroke="#F59E0B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="100" y1="20" x2="20" y2="20" stroke="#F59E0B" stroke-width="10" stroke-linecap="round"/>
+    <line x1="240" y1="20" x2="240" y2="70" stroke="#F59E0B" stroke-width="4" stroke-dasharray="4 4"/>
+    <rect x="232" y="70" width="16" height="14" rx="3" fill="#10B981"/>
+
+    <!-- Operational Pulse Beacon Dot -->
+    <circle cx="100" cy="20" r="8" fill="#10B981"/>
+  </g>
+
+  <!-- Wordmark Accent at bottom -->
+  <text x="256" y="450" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="4">
+    OBRA<tspan fill="#F59E0B">CONTROL</tspan>
+  </text>
+</svg>

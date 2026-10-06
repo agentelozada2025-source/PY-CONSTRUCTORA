@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "ObraControl - Gestión de Contratos & Obras",
+  "short_name": "ObraControl",
+  "description": "Sistema integral de gestión de contratos, cobranzas, comprobantes de pago y finanzas para contratistas de obras.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090C13",
+  "theme_color": "#090C13",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
